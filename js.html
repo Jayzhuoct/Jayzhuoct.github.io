@@ -4,18 +4,23 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<script src="js/fix_topnav.js" type="text/javascript" charset="utf-8"></script>
-		<title>前端学习笔记</title>
+		<title>前端学习</title>
+		<script type="text/javascript">
+			function showData(){
+				window.alert(Date());
+			}
+		</script>
 	</head>
 	<body>
 	<button onclick="topFunction()" id="myBtn" title="回顶部">返回顶部</button>
-	    <div class="header" id="header">
+		<div class="header" id="header" style="background-image: url(img/-417173.jpg);">
 			<h1>前端学习笔记</h1>
 			<p class="my_inf">姓名：DEXTER</p>
 			<p class="my_inf">学号：20204071102</p>
 		</div>
 		<div class="topnav" id="topnav">
 			<ul>
-				<div class="dropdown active">
+				<div class="dropdown ">
 					<a href="index.html"  class="dropbtn">HTML</a>
 					<div class="dropdown-content">
 						<a href="html_basics.html">HTML基础篇</a>
@@ -35,7 +40,7 @@
 						<a href="css_text.html">CSS文本</a>
 					</div>
 				</div>	
-				<div class="dropdown">
+				<div class="dropdown active">
 					<a href="js.html"  class="dropbtn">JAVASCRIPT</a>
 					<div class="dropdown-content">
 						<a href="js_grammar.html">JavaScript语法</a>
@@ -44,97 +49,108 @@
 						<a href="js_sentence.html">JavaScript语句</a>
 						<a href="js_usage.html">JavaScript用法</a>
 					</div>
-				</div>
+				</div>					
 			</ul>
 
 			
 			
 		</div>
 		<div class="UI-info">
-			<h2>什么是HTML</h2>
-			<p>HTML是用来描述网页布局的一种语言，它区别与程序设计语言，属于超文本标记语言</p>
-			<ul class="list-introduce">
-				<li>HTML 指的是超文本<strong>标记语言</strong>: HyperText Markup Language</li>
-				<li>HTML 不是一种编程语言，而是一种标记语言</li>
-				<li>标记语言是一套标记标签 (markup tag)</li>
-				<li>HTML 使用标记标签来描述网页</li>
-				<li>HTML 文档包含了HTML 标签及文本内容</li>
-				<li>HTML文档也叫做 web 页面</li>
-			</ul>
+			<h2>JavaScript 教程</h2>
+			<p>JavaScript 是 Web 的编程语言。</p>
+			<p>所有现代的 HTML 页面都使用 JavaScript。</p>
+			<p>JavaScript 非常容易学。</p>
+			<p>本教程将教你学习从初级到高级JavaScript知识。</p>
 		</div>
 		<hr>
 		<div class="UI-info">
-			<h2>HTML标签</h2>
-			<p>HTML 标记标签通常被称为 HTML 标签 (HTML tag)</p>
+			<h2>你可以尝试一下</h2>
+			<p>点击下方的实例，将会显示当前的日期。</p>
+			<div class="code_result">
+				<ol>
+					<li>这是我的第一个JAVASCRIPT程序</li>
+					<li><a href="javascript:showData()">点击我显示现在的日期</a></li>
+				</ol>
+			</div>
+		</div>
+		<hr >
+		<div class="UI-info">
+			<h2>为什么学习JavaScript?</h2>
+			<p>JavaScript web 开发人员必须学习的 3 门语言中的一门：</p>
 			<ul class="list-introduce">
-				<li>HTML 标签是由<strong>尖括号</strong>包围的关键词，比如&lthtml&gt</li>
-				<li>HTML 标签通常是<strong>成对出现</strong>的，比如 &ltb&gt 和 &lt/b&gt</li>
-				<li>标签对中的第一个标签是开始标签，第二个标签是结束标签</li>
-				<li>开始和结束标签也被称为开放标签和闭合标签</li>
+				<li>HTML 定义了网页的内容</li>
+				<li>CSS 描述了网页的布局</li>
+				<li>JavaScript 网页的行为</li>
 			</ul>
 		</div>
 		<hr >
 		<div class="UI-info">
-			<h2>HTML元素</h2>
-			<p>"HTML 标签" 和 "HTML 元素" 通常都是描述同样的意思.</p>
-			<p>但是严格来讲, 一个 HTML 元素包含了开始标签与结束标签，如下实例:</p>
-			<div class="code">
-			<ol>
-				<li><span style="color: royalblue;">&ltp&gt</span>hello world<span style="color: royalblue;">&lt/p&gt</span></li>
-			</ol>
-			</div>
+			<h2>谁适合阅读本教程?</h2>
+			<ul class="list-introduce">
+				<li>如果您想学习 JavaScript，您可以学习本教程：了解 JavaScript 是如何与 HTML 和 CSS 一起工作的。</li>
+				<li>如果在此之前您已经使用过 JavaScript，您也可以阅读本教程：JavaScript 一直在升级，所以我们需要时刻了解 JavaScript 的新技术。</li>
+			</ul>
+		</div>
+		<hr >
+		<div class="UI-info">
+			<h2>阅读本教程前，您需要了解的知识：</h2>
+			<p>阅读本教程，您需要有以下基础：</p>
+			<ul class="list-introduce">
+				<li>HTML 教程</li>
+				<li>CSS 教程</li>
+			</ul>
 		</div>
 		<div class="row">
-			<a href="html_basics.html">
+			<a href="js_grammar.html">
 				<div class="column" id="1">
 					<div class="card">
-						<h2>HTML基础篇</h2>
-						<div class="fakeimg" style="background-image: url(img/3.gif); color: white;">
-							本篇将介绍几种最基础的HTML元素
+						<h2>JavaScript语法</h2>
+						<div class="fakeimg" style="background-image: url(img/1.gif); color: white;">
+							JavaScript JavaScript 是一个程序语言。语法规则定义了语言结构。
 						</div>
 					</div>
 				</div>				
 			</a>
 
-			<a href="html_element.html">
+			<a href="js_introduce.html">
 				<div class="column" id="2">
 					<div class="card">
-						<h2>HTML元素篇</h2>
+						<h2>JavaScript简介</h2>
 						<div class="fakeimg" style="background-image: url(img/iss052e023801_0.jpg); color: white;">
-							HTML 文档由 HTML 元素定义。
+							JavaScript 是互联网上最流行的脚本语言，这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。
 						</div>
 					</div>
 				</div>				
 			</a>
 
-			<a href="html_pargraph.html">
+			<a href="js_output.html">
 				<div class="column" id="3">
 					<div class="card">
-						<h2>HTML段落篇</h2>
+						<h2>JAVASCRIPT输出</h2>
 						<div class="fakeimg" style="background-image: url(img/landscape-4527526_640.jpg); color: white;">
-							HTML 可以将文档分割为若干段落。
+							JavaScript 没有任何打印或者输出的函数。
 						</div>
 					</div>
 				</div>				
 			</a>
 			
-			<a href="html_attributes.html">
+			<a href="js_sentence.html">
 				<div class="column" id="4">
 					<div class="card">
-						<h2>HTML属性篇</h2>
+						<h2>JavaScript语句</h2>
 						<div class="fakeimg" style="color: white;">
-							属性是元素提供的附加信息
+							JavaScript 语句向浏览器发出的命令。语句的作用是告诉浏览器该做什么。
 						</div>
 					</div>
 				</div>				
 			</a>
 			
-			<a href="html_title.html">
+			<a href="js_usage.html">
 				<div class="column" id="5">
 					<div class="card">
-						<h2>HTML标题篇</h2>
+						<h2>JavaScript用法</h2>
 						<div class="fakeimg" style="background-image: url(img/v2-3ce476215b9e0c16cb49c37904a604e2_r.jpg); color: white;">
-							在HTML文档中，标题很重要
+							HTML 中的脚本必须位于 &ltscript&gt 与 &lt/script&gt 标签之间。
 						</div>
 					</div>
 				</div>				
