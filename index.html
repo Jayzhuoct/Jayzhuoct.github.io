@@ -1,159 +1,476 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="css/index.css"/>
-		<script src="js/fix_topnav.js" type="text/javascript" charset="utf-8"></script>
-		<title>前端学习笔记</title>
-	</head>
-	<body>
-	<button onclick="topFunction()" id="myBtn" title="回顶部">返回顶部</button>
-	    <div class="header" id="header">
-			<h1>前端学习笔记</h1>
-			<p class="my_inf">姓名：DEXTER</p>
-			<p class="my_inf">学号：20204071102</p>
-		</div>
-		<div class="topnav" id="topnav">
-			<ul>
-				<div class="dropdown active">
-					<a href="index.html"  class="dropbtn">HTML</a>
-					<div class="dropdown-content">
-						<a href="html_basics.html">HTML基础篇</a>
-						<a href="html_element.html">HTML元素篇</a>
-						<a href="html_pargraph.html">HTML段落篇</a>
-						<a href="html_attributes.html">HTML属性篇</a>
-						<a href="html_title.html">HTML标题篇</a>
-					</div>
-				</div>	
-				<div class="dropdown">
-					<a href="css.html"  class="dropbtn">CSS</a>
-					<div class="dropdown-content">
-						<a href="css_background.html">CSS背景</a>
-						<a href="css_choice.html">CSS选择器</a>
-						<a href="css_create.html">CSS创建</a>
-						<a href="css_grammar.html">CSS语法</a>
-						<a href="css_text.html">CSS文本</a>
-					</div>
-				</div>	
-				<div class="dropdown">
-					<a href="js.html"  class="dropbtn">JAVASCRIPT</a>
-					<div class="dropdown-content">
-						<a href="js_grammar.html">JavaScript语法</a>
-						<a href="js_introduce.html">JavaScript简介</a>
-						<a href="js_output.html">JavaScript输出</a>
-						<a href="js_sentence.html">JavaScript语句</a>
-						<a href="js_usage.html">JavaScript用法</a>
-					</div>
-				</div>
-			</ul>
+<html lang="en">
 
-			
-			
-		</div>
-		<div class="UI-info">
-			<h2>什么是HTML</h2>
-			<p>HTML是用来描述网页布局的一种语言，它区别与程序设计语言，属于超文本标记语言</p>
-			<ul class="list-introduce">
-				<li>HTML 指的是超文本<strong>标记语言</strong>: HyperText Markup Language</li>
-				<li>HTML 不是一种编程语言，而是一种标记语言</li>
-				<li>标记语言是一套标记标签 (markup tag)</li>
-				<li>HTML 使用标记标签来描述网页</li>
-				<li>HTML 文档包含了HTML 标签及文本内容</li>
-				<li>HTML文档也叫做 web 页面</li>
-			</ul>
-		</div>
-		<hr>
-		<div class="UI-info">
-			<h2>HTML标签</h2>
-			<p>HTML 标记标签通常被称为 HTML 标签 (HTML tag)</p>
-			<ul class="list-introduce">
-				<li>HTML 标签是由<strong>尖括号</strong>包围的关键词，比如&lthtml&gt</li>
-				<li>HTML 标签通常是<strong>成对出现</strong>的，比如 &ltb&gt 和 &lt/b&gt</li>
-				<li>标签对中的第一个标签是开始标签，第二个标签是结束标签</li>
-				<li>开始和结束标签也被称为开放标签和闭合标签</li>
-			</ul>
-		</div>
-		<hr >
-		<div class="UI-info">
-			<h2>HTML元素</h2>
-			<p>"HTML 标签" 和 "HTML 元素" 通常都是描述同样的意思.</p>
-			<p>但是严格来讲, 一个 HTML 元素包含了开始标签与结束标签，如下实例:</p>
-			<div class="code">
-			<ol>
-				<li><span style="color: royalblue;">&ltp&gt</span>hello world<span style="color: royalblue;">&lt/p&gt</span></li>
-			</ol>
-			</div>
-		</div>
-		<div class="row">
-			<a href="html_basics.html">
-				<div class="column" id="1">
-					<div class="card">
-						<h2>HTML基础篇</h2>
-						<div class="fakeimg" style="background-image: url(img/3.gif); color: white;">
-							本篇将介绍几种最基础的HTML元素
-						</div>
-					</div>
-				</div>				
-			</a>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>简历 | 朱俊杰 - JUNJIE ZHU</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/button.css">
+  <link rel="stylesheet" href="./css/liuguan.css">
+  <link rel="stylesheet" href="index.css">
+  <link href="./css/print.css">
+  <!-- 引入了应用程序清单文件 -->
+  <link rel="./manifest" href="manifest.json">
+  </style>
 
-			<a href="html_element.html">
-				<div class="column" id="2">
-					<div class="card">
-						<h2>HTML元素篇</h2>
-						<div class="fakeimg" style="background-image: url(img/iss052e023801_0.jpg); color: white;">
-							HTML 文档由 HTML 元素定义。
-						</div>
-					</div>
-				</div>				
-			</a>
+</head>
 
-			<a href="html_pargraph.html">
-				<div class="column" id="3">
-					<div class="card">
-						<h2>HTML段落篇</h2>
-						<div class="fakeimg" style="background-image: url(img/landscape-4527526_640.jpg); color: white;">
-							HTML 可以将文档分割为若干段落。
-						</div>
-					</div>
-				</div>				
-			</a>
-			
-			<a href="html_attributes.html">
-				<div class="column" id="4">
-					<div class="card">
-						<h2>HTML属性篇</h2>
-						<div class="fakeimg" style="color: white;">
-							属性是元素提供的附加信息
-						</div>
-					</div>
-				</div>				
-			</a>
-			
-			<a href="html_title.html">
-				<div class="column" id="5">
-					<div class="card">
-						<h2>HTML标题篇</h2>
-						<div class="fakeimg" style="background-image: url(img/v2-3ce476215b9e0c16cb49c37904a604e2_r.jpg); color: white;">
-							在HTML文档中，标题很重要
-						</div>
-					</div>
-				</div>				
-			</a>
+<body>
+  <div class="content">
+    <!-- <div class="my-backgroud">
+      <div class="backgroud-word qian">前</div>
+      <div class="backgroud-word duan">端</div>
+    </div> -->
+    <header class="content-hd">
+      <section class="title clearfix">
+        <div class="name">
+          <h1>
+            朱俊杰
+            <small>JUNJIE ZHU</small>
+          </h1>
+        </div>
+        <div class="job">
+          <h2>Java后端开发工程师</h2>
+          <div class="avartor">
+            <img src="./img/me.png" alt="">
+          </div>
+        </div>
+      </section>
 
-		</div>
-		<div class="footer">
-			<div class="inf">
-				<span class="icon"></span><span class="icon-content">姓名：DEXTER</span>
-			</div>
-			<div class="inf">
-				 <span class="icon" style="background-image: url(img/ID.png);"></span> <span class="icon_content" id="test">学号：20204071102</span>
-			</div>
-			<div class="inf">
-				<span class="icon" style="background-image: url(img/school.png);"></span> <span class="icon_content">班级：计算机1班</span>
-			</div>
-			<div class="inf">
-				<span class="icon" style="background-image: url(img/email.png);"></span> <span class="icon-content">邮箱：850717623@qq.com</span>
-			</div>
-		</div>
-	</body>
+      <div class="clearfix">
+        <section class="info">
+          <h2>男 / 安徽</h2>
+          <h3>本科 / 2024年毕业</h3>
+          <p>
+            <a target="_blank"
+              href="http://byau.edu.cn/">
+              黑龙江八一农垦大学
+            </a>
+            <span> / 计算机科学与技术专业</span>
+          </p>
+          <p>
+            <span>成绩：前10%</span>
+          </p>
+        </section>
+
+        <section class="contact">
+          <ul>
+            <li>
+              <a href="https://jayzhu.one" target="_blank">
+                <span>Blog</span>
+                <i class="iconfont icon-blog"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Jayzhuoct" target="_blank">
+                <span>Github</span>
+                <i class="iconfont icon-github-fill"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://t.me/Limerence_oct" target="_blank">
+                <span>Telegram</span>
+                <i class="iconfont icon-telegram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="tel:15656471237">
+                <span>15656471237</span>
+                <i class="iconfont icon-tell"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:850717623@qq.com">
+                <span>850717623@qq.com</span>
+                <i class="iconfont icon-mail"></i>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </header>
+
+    <div class="content-bd">
+      <div class="content-left">
+        <section id="skill">
+          <header class="section-header">
+            <span class="section-title-l"></span>
+            <h2 class="section-title"> 专业技能 </h2>
+            <span class="section-title-r"></span>
+          </header>
+          <div class="item">
+            <div class="section-body">
+              <div class="item">
+                <header class="item-hd clearfix">
+                  <h3 class="item-name"></h3>
+                </header>
+                <div class="item-bd">
+                  <p class="section-content">
+                    <i class="iconfont icon-dot"></i>
+                    精通<strong>Java</strong>、<strong>泛型</strong>、<strong>异常</strong>、<strong>反射</strong>、<strong>多线程并发</strong>等语法基础
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+                <header class="item-hd clearfix"></header>
+                <div class="item-bd">
+                  <p class="section-content">
+                    <i class="iconfont icon-dot"></i>
+                    熟练<strong>Spring</strong>、<strong>SpringBoot</strong>、<strong>JavaEE</strong>等后端框架
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+                <header class="item-hd clearfix"></header>
+                <div class="item-bd">
+                  <p class="section-content">
+                    <i class="iconfont icon-dot"></i>
+                    熟练<strong>MyBatis</strong>、<strong>JPA</strong>、<strong>JDBC</strong>等持久层框架
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+                <header class="item-hd clearfix"></header>
+                <div class="item-bd">
+                  <p class="section-content">
+                    <i class="iconfont icon-dot"></i>
+                    熟练<strong>Spring Security</strong>、<strong>Shiro</strong>等安全框架
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+                <header class="item-hd clearfix"></header>
+                <div class="item-bd">
+                  <p class="section-content">
+                    <i class="iconfont icon-dot"></i>
+                    熟练<strong>Vue</strong>、<strong>React</strong>、<strong>ElementUI</strong>、<strong>Bootstrap</strong>等前端技术
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+                <header class="item-hd clearfix"></header>
+                <div class="item-bd">
+                  <p class="section-content">
+                    <i class="iconfont icon-dot"></i>
+                    熟练<strong>MySQL</strong>、<strong>MariaDB</strong>、<strong>Redis</strong>等数据库技术
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+                <header class="item-hd clearfix">
+                  <h3 class="item-name"></h3>
+                </header>
+                <div class="item-bd">
+                  <p class="section-content">
+                    <i class="iconfont icon-dot"></i>
+                   熟练
+                   <strong>Linux</strong>、<strong>Nginx</strong>、<strong>Node</strong>等服务器技术
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <header class="item-hd clearfix">
+                  <h3 class="item-name"></h3>
+                </header>
+                <div class="item-bd">
+                  <p class="section-content">
+                    <i class="iconfont icon-dot"></i>
+                    拥有 <strong>CSS</strong>动画、<strong>svg</strong> 、<strong>canvas</strong> 画布编程、在线作图产品经验
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+                <header class="item-hd clearfix">
+                  <h3 class="item-name"></h3>
+                </header>
+                <div class="item-bd">
+                  <p class="section-content">
+                    <i class="iconfont icon-dot"></i>
+                    掌握 <strong>Webpack</strong>
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <header class="item-hd clearfix">
+                  <h3 class="item-name"></h3>
+                </header>
+                <div class="item-bd">
+                  <p class="section-content">
+                    <i class="iconfont icon-dot"></i>
+                    了解<strong>Linux</strong>、<strong>Nginx</strong>、<strong>Docker</strong>等服务端技术
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+                <header class="item-hd clearfix">
+                  <h3 class="item-name"></h3>
+                </header>
+                <div class="item-bd">
+                  <p class="section-content">
+                    <i class="iconfont icon-dot"></i>
+                    熟练使用<strong>Git</strong>、<strong>Webstorm</strong>、<strong>Vscode</strong>等开发工具
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="experience">
+          <header class="section-header">
+            <span class="section-title-l"></span>
+            <h2 class="section-title"> 教育经历 </h2>
+            <span class="section-title-r"></span>
+          </header>
+          <div class="section-body">
+            <div class="item">
+              <header class="item-hd clearfix">
+                <h3 class="item-name">主修课程</h3>
+                <span class="item-time">2020.9~2024.6</span>
+              </header>
+              <main class="item-bd">
+                <p class="section-content">
+                  <i class="iconfont icon-dot"></i>
+                  Java程序设计、面向对象程序设计、Web前端开发、Python程序设计、
+                  Linux应用、企业级软件设计与开发、移动应用开发、网络信息安全、
+                  计算机组成原理、数据库原理及应用、 计算机网络、操作系统、软件工程、
+                  算法设计与分析、 高等数学、离散数学、概率论与数理统计等
+                </p>
+              </main>
+            </div>
+          </div>
+        </section>
+
+        <!-- 获奖情况 -->
+        <section id="prise">
+          <header class="section-header">
+            <span class="section-title-l"></span>
+            <h2 class="section-title"> 获奖经历 </h2>
+            <span class="section-title-r"></span>
+          </header>
+          <head class="section-body">
+            <div class="item">
+              <header class="item-hd clearfix">
+                <h3 class="item-name">2023 年中国大学生物理学术竞赛（作品赛） 三等奖</h3>
+                <span class="item-time">2023 年</span>
+              </header>
+              <header class="item-hd clearfix">
+                <h3 class="item-name">2022-2023 学年  二等综合奖学金</h3>
+                <span class="item-time">2023 年</span>
+              </header>
+              <header class="item-hd clearfix">
+                <h3 class="item-name">2021-2022 学年  三等综合奖学金</h3>
+                <span class="item-time">2022 年</span>
+              </header>
+              <header class="item-hd clearfix">
+                <h3 class="item-name">2021-2022 学年  优秀共青团员</h3>
+                <span class="item-time">2022 年</span>
+              </header>
+              <header class="item-hd clearfix">
+                <h3 class="item-name">2020-2021 学年  二等综合奖学金</h3>
+                <span class="item-time">2021 年</span>
+              </header>
+            </div>
+          </head>
+        </section>
+
+        <section id="evaluate">
+          <header class="section-header">
+            <span class="section-title-l"></span>
+            <h2 class="section-title"> 个人评价 </h2>
+            <span class="section-title-r"></span>
+          </header>
+
+          <div class="section-body">
+            <div class="item">
+              <header class="item-hd clearfix">
+                <h3 class="item-name"></h3>
+              </header>
+              <div class="item-bd">
+                <p class="section-content">
+                  <i class="iconfont icon-dot"></i>
+                  性格外向，喜欢与人交流，擅长调动气氛，能够营造愉快的工作环境。
+                </p>
+              </div>
+              <div class="item-bd">
+                <p class="section-content">
+                  <i class="iconfont icon-dot"></i>
+                  具备出色的沟通和表达能力，能够清晰地传达自己的想法和观点。
+                </p>
+              </div>
+              <div class="item-bd">
+                <p class="section-content">
+                  <i class="iconfont icon-dot"></i>
+                  具有学习新事物的能力，对新技术有强烈的好奇心和学习欲望。
+                </p>
+              </div>
+              <div class="item-bd">
+                <p class="section-content">
+                  <i class="iconfont icon-dot"></i>
+                  富有团队合作精神，能适应跨部门沟通合作。
+                </p>
+              </div>
+              <div class="item-bd">
+                <p class="section-content">
+                  <i class="iconfont icon-dot"></i>
+                  语言表达清晰准确，具备较强的逻辑思维能力，能够将复杂的问题分解为简单的步骤并找到解决方案。
+                </p>
+              </div>
+              <div class="item-bd">
+                <p class="section-content">
+                  <i class="iconfont icon-dot"></i>
+                  具备良好的人际关系管理能力，能够建立并维护良好的工作关系，促进团队的凝聚力和合作效果。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="content-right">
+        <!-- 项目 -->
+        <section id="works">
+          <header class="section-header">
+            <span class="section-title-l"></span>
+            <h2 class="section-title"> 项目经历 </h2>
+            <span class="section-title-r"></span>
+          </header>
+          <main class="section-body">
+            <div class="works-item">
+              <header class="item-hd clearfix">
+                <h3 class="item-name">手机销售后台管理系统</h3>
+              </header>
+              <div class="item">
+                <div class="item ">
+                  <header class="item-hd clearfix">
+                  </header>
+                  <div class="item-hd clearfix">
+                    <p class="section-content">
+                      <i class="iconfont icon-dot"></i>
+                      本系统由 Spring boot 框架构建而成，使用了 MVC 设计模式和三层架构设计，
+                      数据的访问层使用的是 Mybatis， 视图层使用的是 Thymeleaf，
+                      控制层使用的是控制器完成对数据的 CURD 和视图的显示控制，
+                      通过拦截器对非法 登陆等请求进行拦截，使用 AOP 面向切面编程自定义注解的方式
+                      完成对登陆以及一些重要操作信息记录到数据 库，方便管理员对操作日志的查看，
+                      通过 excel 工具类完成对数据的批量上传和下载。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="works-item">
+              <header class="item-hd clearfix">
+                <h3 class="item-name">美食汇外卖系统</h3>
+              </header>
+              <div class="item">
+                <div class="item ">
+                  <header class="item-hd clearfix">
+                  </header>
+                  <div class="item-hd clearfix">
+                    <p class="section-content">
+                      <i class="iconfont icon-dot"></i>
+                      本系统属于前后端分离项目，前端使用 H5 页面以及 vue 框架构建页面。
+                      网关使用的是 Nginx 代理服务器作为地 址的转发，以及集群的 Tomcat 配置分发。
+                      应用层主要就是使用 Spring 一系列技术，SpringSession 是用来解决 集群 session 共享的问题，
+                      数据层使用的 MyBatis 与数据库交互。代码管理工具使用的是 Git 以及 Maven 仓库。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="works-item">
+              <header class="item-hd clearfix">
+                <h3 class="item-name">智慧校园系统</h3>
+              </header>
+              <div class="item">
+                <div class="item ">
+                  <header class="item-hd clearfix">
+                  </header>
+                  <div class="item-hd clearfix">
+                    <p class="section-content">
+                      <i class="iconfont icon-dot"></i>
+                      本系统主要采用前后端分离架构思想，前端采用 HTML+CSS+VUE 来实现页面效果展示，
+                      后端采用 SpringBoot+ MyBatisPlus 框架实现数据存储等服务，存储层使用高性能的 MySQL，
+                      主要以年级、班级为单位，对教师和学 生的信息进行记录和统计；服务器使用 Spring Boot 内置的 Tomcat9，
+                      项目构建使用 Maven 来管理 Jar 包。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="works-item">
+              <header class="item-hd clearfix">
+                <h3 class="item-name">惠万家租房系统</h3>
+              </header>
+              <div class="item">
+                <div class="item ">
+                  <header class="item-hd clearfix">
+                  </header>
+                  <div class="item-hd clearfix">
+                    <p class="section-content">
+                      <i class="iconfont icon-dot"></i>
+                      本系统采用 SOA 架构思想进行设计，直接促成房东与租户对接的生活服务平台，
+                      包含房东发布房源，租户多维度寻找房源，智能匹配房源，近期行情查询等功能。
+                      减少中间环节产生的费用，提高房东与租户匹配的成功率，本系统融合了 RPC、大数据等相技术，
+                      如 SpringBoot、SpringMVC、MyBaits、Dubbo、React.js、GraphQL、 RocketMQ、Flume、ELK 等技术，
+                      实现了移动 web 应用、微信小程序应用、后台管理应用等功能。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </section>
+
+        <section id="city">
+          <header class="section-header">
+            <span class="section-title-l"></span>
+            <h2 class="section-title"> 意向城市 </h2>
+            <span class="section-title-r"></span>
+          </header>
+          <head class="section-body">
+            <div class="item">
+              <header class="item-hd clearfix">
+                <h3 class="item-name">
+                  北京、上海、广州、深圳、成都、
+                  重庆、杭州、武汉、苏州、西安、
+                  南京、长沙、天津、郑州、东莞、
+                  青岛、昆明、宁波、合肥、无锡、
+                  厦门、福州、济南、沈阳、大连、
+                  昆明、长春、泉州、温州、贵阳、
+                  南宁、南昌、常州、南通、珠海、
+                  烟台、绍兴、嘉兴、惠州、太原、
+                  金华、台州、中山、扬州、兰州。
+                </h3>
+              </header>
+            </div>
+          </head>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="btn_wrap">
+    <a class="pdf btn-1 btn2" href=".pdf">
+      <i class="iconfont icon-pdf"></i>
+      PDF简历
+    </a>
+    <span class="edit btn-1  btn2">编辑</span>
+  </div>
+  <script src="index.js"></script>
+</body>
+
 </html>
